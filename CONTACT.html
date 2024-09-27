@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        
+        body {
+            background-image: url('gallery/BACKGROUND.PNG');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+               .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+                .contact-info {
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: #00BFFF;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: block;
+            margin: 10px 0;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffcc00;
+        }
+
+        
+        form {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        
+        footer {
+            margin-top: 40px;
+            color: #cccccc;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="overlay"></div>
+
+        <div class="container">
+                <h1>Contact Me</h1>
+        <p>Feel free to reach out via the form below or through the contact options.</p>
+
+        
+        <div class="contact-info">
+            <a href="tel:0929732074">Call me: 0929732074</a>
+            <a href="tel:0780690853">Call me: 0780690853</a>
+            <a href="mailto:sabastinejalekonyungi@gmail.com">Email me:sabastinejalekonyungi@gmail.com .</a>
+            <a href="https://www.facebook.com/gp.spruce" target="_blank">Facebook</a>
+            <a href="https://wa.me/0929732074" target="_blank">WhatsApp: 0929732074</a>
+            <a href="https://wa.me/0780680853" target="_blank">WhatsApp: 0780690853</a>
+            <a href="https://www.instagram.com/dg_sabz_konyungi_jale/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@dgsabz" target="_blank">TikTok</a>
+        </div>
+
+        
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+
+        
+        <a href="HOME.html" class="back-link">Back to Home Page</a>
+    </div>
+
+   
+    <footer>
+        <p>&copy;Dg Śábź TECHNOLOGIES.</p>
+           </footer>
+
+</body>
+</html>

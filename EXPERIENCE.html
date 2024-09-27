@@ -1,99 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CONTACT US</title>
-        <style>
-            body {
-                background-image: url(gallery/FORTH.PNG);
-                color: white; 
-                font-family: Arial, sans-serif;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dg Sabz</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('gallery/FORTH.PNG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+                .overlay {
+            background-color: rgba(0, 0, 0, 0.8); 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+                .container {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+               .job {
+            margin-bottom: 30px;
+        }
+
+        .job-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .company-name {
+            font-style: italic;
+            color: #ddd;
+            margin-bottom: 5px;
+        }
+
+        .date-location {
+            font-style: italic;
+            color: #bbb;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #eee;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #0056b3;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #ffcc00;
+            color: #000;
+        }
+
+                @media (max-width: 768px) {
+            .container {
+                padding: 15px;
             }
-            .work-experience {
-                background-color: rgba(0, 0, 0, 0.7); 
-                padding: 20px;
-                border-radius: 10px;
-            }
+
             .job-title {
-                font-size: 1.5em;
-                font-weight: bold;
+                font-size: 1.6em;
             }
-            .company-name, .date-location {
-                font-style: italic;
-                color: #ddd; 
-            }
-            ul {
-                padding-left: 20px;
-            }
-            li {
-                margin-bottom: 10px;
-            }
+
             a {
-                color: lightblue; 
-                text-decoration: none;
+                font-size: 16px;
+                padding: 8px 12px;
             }
-            a:hover {
-                text-decoration: underline;
-            }
-            a {
-                color: blue;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="work-experience">
-            <div class="job">
-                <div class="job-title">MANAGER</div>
-                <div class="company-name">ANAASU GRAIN MILLERS LIMITED KOBOKO</div>
-                <div class="date-location">12/2018 – PRESENT</div>
-                <ul>
-                    <li>Oversaw daily operations of the grain milling plant, ensuring smooth workflow and quality control.</li>
-                    <li>Managed a team of 20 employees, improving productivity through workflow optimization.</li>
-                    <li>Implemented cost-saving measures that reduced operational expenses.</li>
-                    <li>Negotiated contracts with suppliers, ensuring timely procurement of raw materials at competitive rates.</li>
-                    <li>Developed marketing strategies that increased the company's customer base.</li>
-                </ul>
-            </div>
+            
+        }
+    </style>
+</head>
+<body>
 
-            <div class="job">
-                <div class="job-title">VOLUNTEER</div>
-                <div class="company-name">CHILD EVANGELISM FELLOWSHIP SOUTH SUDAN</div>
-                <div class="date-location">12/2015 – 1/2019 | KAJO KEJI</div>
-                <ul>
-                    <li>Led and facilitated youth mentorship programs to foster personal and spiritual development.</li>
-                    <li>Organized community outreach events, bringing together volunteers to serve underprivileged groups.</li>
-                    <li>Provided guidance and counseling to children and young adults as part of a faith-based support initiative.</li>
-                    <li>Coordinated logistics and materials for regional workshops, ensuring successful execution.</li>
-                    <li>Collaborated with ministry leaders to develop programs aimed at building leadership skills in young participants.</li>
-                </ul>
-            </div>
+        <div class="overlay"></div>
 
-            <div class="job">
-                <div class="job-title">JUNIOR WEB DESIGN</div>
-                <div class="company-name">Dg SABZ TECHNOLOGIES</div>
-                <div class="date-location">05/2023 – PRESENT | KAMPALA</div>
-                <ul>
-                    <li>Built and maintained websites.</li>
-                    <li>Collaborated with designers and stakeholders to launch KUSA websites.</li>
-                    <li>Provided technical support.</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-title">VOLUNTEER PRESENTER & JOURNALIST</div>
-                <div class="company-name">SPIRIT FM YEI</div>
-                <div class="date-location">12/2022 – 05/2023 | YEI, SOUTH SUDAN</div>
-                <ul>
-                    <li>Hosted live radio shows, engaging listeners on social, cultural, and current affairs topics.</li>
-                    <li>Conducted interviews with local leaders and community members, delivering insightful news reports.</li>
-                    <li>Produced and edited radio content for news and talk shows, ensuring high-quality programming.</li>
-                    <li>Covered community events and provided on-the-ground journalism for news segments.</li>
-                    <li>Collaborated with station staff to manage technical aspects of live broadcasts and recordings.</li>
-                </ul>
-            </div>
+        <div class="container">
+                <div class="job">
+            <div class="job-title">Manager</div>
+            <div class="company-name">Anaasu Grain Millers Limited, Koboko</div>
+            <div class="date-location">December 2018 – Present</div>
+            <ul>
+                <li>Oversaw daily operations of the grain milling plant, ensuring smooth workflow and quality control.</li>
+                <li>Managed a team of 20 employees, improving productivity through workflow optimization.</li>
+                <li>Implemented cost-saving measures that reduced operational expenses.</li>
+                <li>Negotiated contracts with suppliers, ensuring timely procurement of raw materials at competitive rates.</li>
+                <li>Developed marketing strategies that increased the company's customer base.</li>
+            </ul>
         </div>
 
-        <a href="HOME.html">BACK TO HOME PAGE</a>
-    </body>
+               <div class="job">
+            <div class="job-title">Volunteer</div>
+            <div class="company-name">Child Evangelism Fellowship, South Sudan</div>
+            <div class="date-location">December 2015 – January 2019 | Kajo Keji</div>
+            <ul>
+                <li>Led and facilitated youth mentorship programs to foster personal and spiritual development.</li>
+                <li>Organized community outreach events, bringing together volunteers to serve underprivileged groups.</li>
+                <li>Provided guidance and counseling to children and young adults as part of a faith-based support initiative.</li>
+                <li>Coordinated logistics and materials for regional workshops, ensuring successful execution.</li>
+                <li>Collaborated with ministry leaders to develop programs aimed at building leadership skills in young participants.</li>
+            </ul>
+        </div>
+
+               <div class="job">
+            <div class="job-title">Junior Web Designer</div>
+            <div class="company-name">Dg Sabz Technologies</div>
+            <div class="date-location">May 2023 – Present | Kampala</div>
+            <ul>
+                <li>Built and maintained websites for a diverse range of clients.</li>
+                <li>Collaborated with designers and stakeholders to launch new websites for various organizations.</li>
+                <li>Provided technical support and troubleshooting for web-related issues.</li>
+            </ul>
+        </div>
+
+                <div class="job">
+            <div class="job-title">Volunteer Presenter & Journalist</div>
+            <div class="company-name">Spirit FM Yei</div>
+            <div class="date-location">December 2022 – May 2023 | Yei, South Sudan</div>
+            <ul>
+                <li>Hosted live radio shows, engaging listeners on social, cultural, and current affairs topics.</li>
+                <li>Conducted interviews with local leaders and community members, delivering insightful news reports.</li>
+                <li>Produced and edited radio content for news and talk shows, ensuring high-quality programming.</li>
+                <li>Covered community events and provided on-the-ground journalism for news segments.</li>
+                <li>Collaborated with station staff to manage technical aspects of live broadcasts and recordings.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;Dg Śábź TECHNOLOGIES.</p>
+    </footer>
+
+        <a href="HOME.html">Back to Home Page</a>
+
+</body>
 </html>

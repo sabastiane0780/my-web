@@ -1,87 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <header>
-        <marquee>WELCOME TO THE EXPLORATION OF MY JOURNEY AND MILESTONE </marquee>
-    </header>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY CV</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <title>Dg Sabz - Profile</title>
     <style>
-        body{
-            background-image: url(gallery/BACKGROUND.PNG);
-            color:black;
+       
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        ul li a{
-            font-style: italic;
-            font-family: 'Times New Roman';
-            font-weight: 300;
-            font-size: large;
-            
-        }
-        ul li a{
-            
-            display: inline-block;
-            margin-top: 20px;
-            text-align: inherit;
-            text-decoration: none;
-            color: blue;
-        }
-        footer {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    h1{
-        color: blue;
-    }
-h3{
-    color: blue;
-    margin-left: 20px;
-    position: relative;
-}
-P{
-    text-align: center;
-    text-decoration-style: double;
-    background-color: black;
-    width: auto;
-}
 
-    
-  </style>
-        
+                .logo {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            background-color: #0056b3;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+        }
+
+        .menu h2 {
+            margin: 0;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+                .mainDiv {
+            display: flex;
+            padding: 30px;
+            background-color: #fff;
+        }
+
+        .leftDiv {
+            width: 250px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-right: 2px solid #ccc;
+        }
+
+        .leftDiv ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .leftDiv ul li {
+            margin-bottom: 15px;
+        }
+
+        .leftDiv ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #0056b3;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .leftDiv ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .rightDiv {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+              .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0056b3;
+        }
+
+        .profile-details {
+            max-width: 600px;
+        }
+
+        .profile-details h1 {
+            font-size: 28px;
+            color: #0056b3;
+            margin: 0 0 10px 0;
+        }
+
+        .profile-details p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+                .footer {
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+                @media (max-width: 768px) {
+            .mainDiv {
+                flex-direction: column;
+            }
+
+            .leftDiv, .rightDiv {
+                width: 100%;
+            }
+
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1 >HELLO AS YOU NAVIGATE THROUGH MY WEBSITE FEEL FREE TO CONTACT AND ME FOR ANY ASSITENCE AM THERE 24/7 TO ENSURES THAT YOUR DREAMS COMES TRUE</h1>
-    <ul>
-    <li><a href="HOME.html">HOME PAGE</a></li>
-    <li><a href="PROFILE.html">PROFILE</a></li>
-    <li><a href="EDUCATION.html">EDUCATION</a></li>
-    <li> <a href="EXPERIENCE.html">EXPERIENCE</a></li>
-    <li> <a href="GALLERY.html">GALLERY</a></li>
-    <li> <a href="CONTACTs.html">CONTACT</a></li>
+       <div class="logo">
+        Dg Sabz Technologies
+    </div>
 
-    </ul>
-    <h3>TODAY IS THE BEGINNING OF GREATER THINGS, AND IT BEGINS HERE AT Dg Sabz TECHNOLOGIES </h3>
-<footer>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/yourprofile" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.twitter.com/yourprofile" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com/yourprofile" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-      
-    <MARQUEE>THANKS SO MUCH FOR SUPPORTING ME COME AGAIN TOMORROW FOR ALL YOUR RELIABLE SOLUTIONS </MARQUEE>
-    <p>&copy; 2024 Dg Śábź TECHNOLOGIES.</p>
-    <p>Unauthorized duplication is prohibited.</p>
-</footer>
+       <div class="menu">
+        <h2>Welcome to My Profile - Explore What We Do and How We Can Help You</h2>
+    </div>
+
+       <div class="mainDiv">
+                <div class="leftDiv">
+            <ul>
+                <li><a href="PROFILE.html">My Profile</a></li>
+                <li><a href="EDUCATION.html">My Education</a></li>
+                <li><a href="EXPERIENCE.html">My Experience</a></li>
+                <li><a href="GALLERY.html">My Gallery</a></li>
+                <li><a href="CONTACT.html">Contact Me</a></li>
+            </ul>
+        </div>
+
+                <div class="rightDiv">
+            <div class="profile-section">
+                <img src="gallery/GUITER2.jpg" alt="Profile Picture" class="profile-image">
+                <div class="profile-details">
+                    <h1>Sebastiane Konyungi Jale Budyang</h1>
+                    <p>I am a skilled web designer with extensive knowledge in programming and a strong passion for creating innovative digital solutions.</p>
+                    <p>With a continuous drive to learn and grow, I specialize in frontend and backend development, ensuring modern and functional designs for various platforms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <div class="footer">
+        <p>&copy;Dg Śábź Technologies</p>
+    </div>
 </body>
 </html>
