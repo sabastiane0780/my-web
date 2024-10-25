@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Dg Sabz</title>
     <style>
-        
         body {
             margin: 0;
             padding: 0;
@@ -14,9 +13,12 @@
             background-position: center;
             color: white;
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-                .overlay {
+        .overlay {
             background-color: rgba(0, 0, 0, 0.8); 
             position: absolute;
             top: 0;
@@ -26,7 +28,7 @@
             z-index: 1;
         }
 
-                .container {
+        .container {
             position: relative;
             z-index: 2;
             max-width: 1000px;
@@ -35,9 +37,10 @@
             background-color: rgba(0, 0, 0, 0.7); 
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            flex: 1;
         }
 
-               .job {
+        .job {
             margin-bottom: 30px;
         }
 
@@ -88,7 +91,14 @@
             color: #000;
         }
 
-                @media (max-width: 768px) {
+        footer {
+            text-align: center;
+            color: #ccc;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
             .container {
                 padding: 15px;
             }
@@ -101,16 +111,15 @@
                 font-size: 16px;
                 padding: 8px 12px;
             }
-            
         }
     </style>
 </head>
 <body>
 
-        <div class="overlay"></div>
+    <div class="overlay"></div>
 
-        <div class="container">
-                <div class="job">
+    <div class="container">
+        <div class="job">
             <div class="job-title">Manager</div>
             <div class="company-name">Anaasu Grain Millers Limited, Koboko</div>
             <div class="date-location">December 2018 – Present</div>
@@ -123,7 +132,7 @@
             </ul>
         </div>
 
-               <div class="job">
+        <div class="job">
             <div class="job-title">Volunteer</div>
             <div class="company-name">Child Evangelism Fellowship, South Sudan</div>
             <div class="date-location">December 2015 – January 2019 | Kajo Keji</div>
@@ -136,7 +145,7 @@
             </ul>
         </div>
 
-               <div class="job">
+        <div class="job">
             <div class="job-title">Junior Web Designer</div>
             <div class="company-name">Dg Sabz Technologies</div>
             <div class="date-location">May 2023 – Present | Kampala</div>
@@ -147,7 +156,7 @@
             </ul>
         </div>
 
-                <div class="job">
+        <div class="job">
             <div class="job-title">Volunteer Presenter & Journalist</div>
             <div class="company-name">Spirit FM Yei</div>
             <div class="date-location">December 2022 – May 2023 | Yei, South Sudan</div>
@@ -159,12 +168,13 @@
                 <li>Collaborated with station staff to manage technical aspects of live broadcasts and recordings.</li>
             </ul>
         </div>
-    </div>
-    <footer>
-        <p>&copy;Dg Śábź TECHNOLOGIES.</p>
-    </footer>
 
         <a href="HOME.html">Back to Home Page</a>
+    </div>
+
+    <footer>
+        <p>&copy; Dg Śábź TECHNOLOGIES.</p>
+    </footer>
 
 </body>
 </html>

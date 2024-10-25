@@ -7,9 +7,9 @@
     <style>
        
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: sans-serif;
+            margin: 20px;
+            padding: 10px;
             background-color: #f4f4f4;
             color: #333;
         }
@@ -21,6 +21,7 @@
             text-align: center;
             font-size: 24px;
             font-weight: bold;
+            font-style: italic;
         }
 
         .menu {
@@ -34,7 +35,7 @@
         .menu h2 {
             margin: 0;
             font-size: 22px;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
                 .mainDiv {
@@ -44,10 +45,11 @@
         }
 
         .leftDiv {
+
             width: 250px;
             padding: 20px;
-            background-color: #f9f9f9;
-            border-right: 2px solid #ccc;
+            background-color: #088482;
+            border-right: 2px solid black;
         }
 
         .leftDiv ul {
@@ -89,6 +91,7 @@
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #0056b3;
+            transition: tranform 0.3s ease-out;
         }
 
         .profile-details {
@@ -102,9 +105,10 @@
         }
 
         .profile-details p {
-            font-size: 16px;
+            font-size: 20px;
             color: #555;
             line-height: 1.6;
+            font-weight: bold;
         }
 
                 .footer {
@@ -115,7 +119,7 @@
         }
 
         .footer p {
-            margin: 0;
+         margin-top: 20px;
         }
 
                 @media (max-width: 768px) {
@@ -135,7 +139,10 @@
             .profile-image {
                 margin-bottom: 20px;
             }
-        }
+            html{
+                scroll-behavior: smooth;
+            }
+            }
     </style>
 </head>
 <body>
@@ -144,7 +151,7 @@
     </div>
 
        <div class="menu">
-        <h2>Welcome to My Profile - Explore What We Do and How We Can Help You</h2>
+        <h2><strong>Sabastiane Konyungi</strong> Jale welcomes you</h2>
     </div>
 
        <div class="mainDiv">
@@ -160,10 +167,10 @@
 
                 <div class="rightDiv">
             <div class="profile-section">
-                <img src="gallery/GUITER2.jpg" alt="Profile Picture" class="profile-image">
+                <img src="gallery/IMG_0425.JPG" alt="Profile Picture" class="profile-image">
                 <div class="profile-details">
-                    <h1>Sebastiane Konyungi Jale Budyang</h1>
-                    <p>I am a skilled web designer with extensive knowledge in programming and a strong passion for creating innovative digital solutions.</p>
+                    <h1>Sabastiane Konyungi Jale Budyang</h1>
+                    <p>Minister,Innovative,Creative,Enterprenuer,Human rights activist,Social worker,mentor,teacher,Researcher,Climate change activist</p>
                     <p>With a continuous drive to learn and grow, I specialize in frontend and backend development, ensuring modern and functional designs for various platforms.</p>
                 </div>
             </div>

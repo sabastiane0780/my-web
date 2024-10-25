@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <style>
-        
         body {
             background-image: url('gallery/BACKGROUND.PNG');
             background-size: cover;
@@ -14,7 +13,11 @@
             color: #ffffff;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
+
         .overlay {
             background-color: rgba(0, 0, 0, 0.7);
             position: absolute;
@@ -25,11 +28,13 @@
             z-index: -1;
         }
 
-               .container {
+        .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 50px 20px;
             text-align: center;
+            z-index: 1;
+            position: relative; /* Allows overlay to be behind this element */
         }
 
         h1 {
@@ -43,8 +48,9 @@
             margin-bottom: 30px;
         }
 
-                .contact-info {
+        .contact-info {
             margin-bottom: 40px;
+            text-align: left; /* Align text to left for better readability */
         }
 
         a {
@@ -60,11 +66,11 @@
             color: #ffcc00;
         }
 
-        
         form {
             background-color: rgba(255, 255, 255, 0.1);
             padding: 30px;
             border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         input, textarea {
@@ -89,36 +95,65 @@
             background-color: #0056b3;
         }
 
-        
         footer {
             margin-top: 40px;
             color: #cccccc;
             font-size: 0.9em;
+            text-align: center;
+        }
+
+        .back-link {
+            margin-top: 20px;
+            display: inline-block;
+            color: #00BFFF;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #00BFFF;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p, a {
+                font-size: 1em;
+            }
+
+            input, textarea {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
 
-   
     <div class="overlay"></div>
 
-        <div class="container">
-                <h1>Contact Me</h1>
+    <div class="container">
+        <h1>Contact Me</h1>
         <p>Feel free to reach out via the form below or through the contact options.</p>
 
-        
         <div class="contact-info">
             <a href="tel:0929732074">Call me: 0929732074</a>
             <a href="tel:0780690853">Call me: 0780690853</a>
-            <a href="mailto:sabastinejalekonyungi@gmail.com">Email me:sabastinejalekonyungi@gmail.com .</a>
-            <a href="https://www.facebook.com/gp.spruce" target="_blank">Facebook</a>
-            <a href="https://wa.me/0929732074" target="_blank">WhatsApp: 0929732074</a>
-            <a href="https://wa.me/0780680853" target="_blank">WhatsApp: 0780690853</a>
-            <a href="https://www.instagram.com/dg_sabz_konyungi_jale/" target="_blank">Instagram</a>
-            <a href="https://www.tiktok.com/@dgsabz" target="_blank">TikTok</a>
+            <a href="mailto:sabastinejalekonyungi@gmail.com">Email me: sabastinejalekonyungi@gmail.com</a>
+            <a href="https://www.linkedin.com/in/SABASTIANE KONYUNGI" target="_blank" aria-label="Visit my LinkedIn profile">LinkedIn</a>
+            <a href="https://www.facebook.com/gp.spruce" target="_blank" aria-label="Visit my Facebook profile">Facebook</a>
+            <a href="https://wa.me/0929732074" target="_blank" aria-label="WhatsApp me: 0929732074">WhatsApp: 0929732074</a>
+            <a href="https://wa.me/0780680853" target="_blank" aria-label="WhatsApp me: 0780690853">WhatsApp: 0780690853</a>
+            <a href="https://www.instagram.com/dg_sabz_konyungi_jale/" target="_blank" aria-label="Visit my Instagram profile">Instagram</a>
+            <a href="https://www.tiktok.com/@dgsabz" target="_blank" aria-label="Visit my TikTok profile">TikTok</a>
         </div>
 
-        
         <form action="submit_form.php" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
@@ -126,14 +161,12 @@
             <input type="submit" value="Send Message">
         </form>
 
-        
         <a href="HOME.html" class="back-link">Back to Home Page</a>
     </div>
 
-   
     <footer>
-        <p>&copy;Dg Śábź TECHNOLOGIES.</p>
-           </footer>
+        <p>&copy; Dg Śábź TECHNOLOGIES.</p>
+    </footer>
 
 </body>
 </html>

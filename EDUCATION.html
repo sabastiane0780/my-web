@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education Background</title>
     <style>
-       
         body {
-             
             background-size: cover;
             background-position: center;
             font-family: 'Arial', sans-serif;
@@ -16,7 +14,6 @@
             padding: 0;
         }
 
-       
         .overlay {
             background-color: rgba(0, 0, 0, 0.7); 
             position: absolute;
@@ -27,14 +24,12 @@
             z-index: -1;
         }
 
-       
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
-       
         h1 {
             text-align: center;
             font-size: 2.5em;
@@ -43,14 +38,21 @@
             letter-spacing: 2px;
         }
 
-       
-        marquee {
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
             color: #ffcc00;
             font-size: 1.2em;
             margin-bottom: 30px;
+            animation: marquee 10s linear infinite;
         }
 
-       
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -74,7 +76,10 @@
             color: #ffffff;
         }
 
-        
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
         .back-link {
             display: block;
             width: 200px;
@@ -102,17 +107,14 @@
 </head>
 <body>
 
-   
     <div class="overlay"></div>
 
     <div class="container">
-      
-        <marquee>The beginning of everything as the journey continues to widen knowledge in a changing world</marquee>
+        <header>
+            <div class="marquee">The beginning of everything as the journey continues to widen knowledge in a changing world</div>
+            <h1>My Education Background</h1>
+        </header>
 
-        
-        <h1>My Education Background</h1>
-
-       
         <table>
             <tr>
                 <th>Year</th>
@@ -141,14 +143,12 @@
             </tr>
         </table>
 
-        
         <a href="HOME.html" class="back-link">Back to Home Page</a>
     </div>
 
-   
     <footer>
         <p>&copy;Dg Śábź Technologies.</p>
-           </footer>
+    </footer>
 
 </body>
 </html>
